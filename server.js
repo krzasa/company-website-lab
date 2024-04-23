@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 app.use(express.static('public')); //tells express to try to match requests with files in the directory called 'public'
+require('dotenv').config();
+
 
 // Attribution: Most of the paragraphs were provided by ChatGPT
 const home = "Welcome to Notes – where your ideas find a home. Whether you're a student, professional, or creative thinker, our note-taking app is your companion in capturing and organizing thoughts seamlessly. With intuitive design and powerful features, Notes empowers you to transform inspiration into action effortlessly. Say hello to a clutter-free mind and hello to productivity. Join us, and let's embark on a journey of creativity, organization, and success together. Welcome to your new favorite note-taking app.";
